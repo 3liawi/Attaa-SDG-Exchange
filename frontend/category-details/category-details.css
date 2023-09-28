@@ -1,0 +1,122 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; */
+}
+.category-details {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.category-name {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.category-description {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h4 {
+    font-size: 1.2em;
+    color: #444;
+    padding: 15px;
+    background-color: #f8f8f8;
+    margin: 0;
+    text-align: center; /* Centering the title */
+}
+
+.product-card p {
+    padding: 10px;
+    color: #666;
+    font-size: 1em;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.product-card:hover img {
+    opacity: 0.9;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.pagination-control, .pagination-number {
+    margin: 0 10px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-control:hover, .pagination-number:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #666;
+}

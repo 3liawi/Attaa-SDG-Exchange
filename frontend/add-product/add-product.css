@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Shamel;
+    src: url("../FFShamelFamily-SansOneBold.ttf");
+}
+
+body {
+    direction: rtl;
+    font-family: Shamel;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; /* Space for navbar and footer */
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #15a39d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #12807b;
+}
+
+/* Responsive Design */
+@media (max-width: 520px) {
+    .container {
+        padding: 30px 0; /* Reduced padding for smaller screens */
+    }
+
+    form {
+        width: 90%;
+    }
+}

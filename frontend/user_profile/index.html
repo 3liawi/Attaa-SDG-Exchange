@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="profile-page">
+      <!-- profile  -->
+      <div class="user-profile-section">
+        <div class="user-profile-image">
+          <img
+            src="../place-holder.png
+            alt=""
+            class="image_placeholder"
+          />
+        </div>
+        <div class="user-profile-details">
+          <h1>حسن</h1>
+          <button class="user-edit-profile-btn">
+            <i class="ri-edit-line"></i>تعديل الملف الشخصي
+          </button>
+        </div>
+      </div>
+
+      <div class="tab-section">
+        <ul class="tab-list">
+          <li>
+            <a href="#" class="tab-link" id="product-published-tab"
+              >منتجات تم نشرها</a
+            >
+          </li>
+          <li>
+            <a href="#" class="tab-link" id="product-pending-tab"
+              >منتجات قيد الانتظار</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="product-published-content" class="tab-content">
+        <!-- Content for published products -->
+      </div>
+      <div id="product-pending-content" class="tab-content">
+        <!-- Content for pending products -->
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="../navbar/navbar.js"></script>
+  </body>
+</html>

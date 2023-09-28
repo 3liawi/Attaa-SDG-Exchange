@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <base href="../navbar/" />
+
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../attaa-logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-list">
+        <li><a href="../index.html">الرئيسية</a></li>
+        <!-- Categories Dropdown -->
+        <li class="dropdown">
+          <button class="dropbtn">التصنيفات</button>
+          <div class="dropdown-content" id="categories-dropdown">
+            <!-- Categories will be populated here by the JS -->
+          </div>
+        </li>
+        <li><a href="../about/about.html">عن الموقع</a></li>
+        <li><a href="../contact-us/contact-us.html">تواصل معنا</a></li>
+        <!-- More Dropdown -->
+        <li class="dropdown">
+          <button class="dropbtn">المزيد</button>
+          <div class="dropdown-content">
+            <a href="../leaderboard/leaderboard.html">لوحة المتصدرين</a>
+            <a href="#page2">الصفحة 2</a>
+            <a href="#page3">الصفحة 3</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Authentication Links -->
+      <div class="auth-links">
+        <a href="../login page/index.html?form=signup" class="register-link"
+          >التسجيل</a
+        >
+        <a href="../login page/index.html?form=signin">تسجيل الدخول</a>
+      </div>
+
+      <div id="profileDropdown" class="profile-dropdown">
+        <img
+          id="navbarProfileImage"
+          src=""
+          alt="User Profile Image"
+          class="profile-image"
+        />
+        <div class="profile-dropdown-content">
+          <a href="../user_profile/index.html">صفحة الملف الشخصي</a>
+          <a href="#" id="logoutLink">تسجيل الخروج</a>
+        </div>
+      </div>
+
+      <!-- Menu Icon for Responsive Design -->
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- <script src="./navbar.js"></script> -->
+  </body>
+</html>

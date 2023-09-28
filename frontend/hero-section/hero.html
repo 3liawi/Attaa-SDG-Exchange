@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../hero-section/hero.css" />
+    <base href="../hero-section/" />
+  </head>
+  <body>
+    <div class="hero-container">
+      <img src="../hero.png" alt="Description of Image" class="hero-image" />
+      <div class="hero-content">
+        <h1>
+          أهلاً بك في منصتنا! هنا، نجمع بين الدعم وتحقيق أهداف التنمية
+          المستدامة. شاركنا في هذه المبادرة لتحقيق التوازن بين المساعدة والنمو
+          المستدام، وساهم في بناء مستقبل أفضل للجميع.
+        </h1>
+        <form
+          action="../search-results/search-results.html"
+          method="GET"
+          class="search-form"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="البحث عن منتجات ..."
+            class="search-input"
+          />
+          <button type="submit" class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+          <span class="validation-message"></span>
+          <!-- This is the new line -->
+        </form>
+      </div>
+    </div>
+    <script src="../hero-section/hero.js"></script>
+  </body>
+</html>

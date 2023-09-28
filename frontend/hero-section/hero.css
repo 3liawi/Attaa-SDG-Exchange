@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Shamel;
+  src: url("../FFShamelFamily-SansOneBold.ttf");
+}
+
+.hero-container {
+  display: flex;
+  padding: 40px 60px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  width: 43%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: black;
+  width: 40%;
+  direction: rtl;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.search-input {
+  padding: 12px 20px 12px 50px;
+  border-radius: 5px;
+  border: none;
+  width: 75%;
+  font-size: 18px;
+  background: linear-gradient(
+    135deg,
+    #f5f7fa,
+    #e4e9ee
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.search-input::before {
+
+  content: "\1F50D";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #a0a0a0;
+}
+
+.search-input:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  width: 77%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #15a39d;
+  outline: none;
+  background: linear-gradient(
+    135deg,
+    #e4e9ee,
+    #f5f7fa
+  );
+}
+
+.search-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #15a39d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #12807b;
+}
+
+.search-btn:active {
+  background-color: #12807b !important;
+  transform: scale(1) !important;
+  box-shadow: none !important;
+}
+
+.validation-message {
+  display: none;
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-right: 5px;
+  font-weight: 600;
+  text-align: right;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fdecea;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.validation-message {
+  animation: fadeIn 0.3s forwards;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    display: block;
+  }
+
+  .hero-image {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .hero-content {
+    position: static;
+    transform: none;
+    text-align: center;
+    color: black;
+  }
+
+  .search-input {
+    width: 80%;
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Shamel';
+    src: url("../FFShamelFamily-SansOneBold.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shamel';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.container {
+    width: 42rem;
+    background: #15a39d;
+    padding: 20px 30px;
+    border: 1px solid #fffefe;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    margin: 2rem 0;
+}
+
+.text {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 40px;
+    color: #fffefe;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.rating input:checked ~ label {
+    color: #f9df4a;
+    text-shadow: 0 0 20px #952;
+}
+
+
+.textarea {
+    width: 100%;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    resize: none;
+    outline: none;
+    height: 40px;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textarea--active {
+    padding: 1rem;
+    height: 6rem;
+    opacity: 1;
+}
+
+
+.btn {
+    text-decoration: none;
+    color: #15a39d;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.btn--active {
+    display: inline-block;
+}

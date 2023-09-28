@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="./profile.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <!-- User Info Section -->
+    <div class="user-info">
+        <img src="" alt="صورة المستخدم" id="userImage" />
+        <h2 id="userName">اسم المستخدم</h2>
+        <p id="userEmail">user@example.com</p>
+        <button id="editProfileBtn">تعديل الملف الشخصي</button>
+        <button id="logoutBtn">تسجيل الخروج</button>
+    </div>
+
+    <!-- Tabs for different sections -->
+    <div class="tabs">
+        <button class="tab-button info-tab">المعلومات</button>
+        <button class="tab-button posted-products-tab">المنتجات المنشورة</button>
+        <button class="tab-button pending-products-tab">المنتجات المعلقة</button>
+    </div>
+
+    <!-- Info Section -->
+    <div class="section info-section">
+        <!-- User information content from API will be populated here -->
+        <h3>المعلومات</h3>
+        <div id="userInfoContent"></div>
+    </div>
+
+    <!-- Posted Products Section -->
+    <div class="section posted-products-section">
+        <h3>المنتجات المنشورة</h3>
+        <!-- Posted products content from API will be populated here -->
+        <div id="postedProductsContent"></div>
+    </div>
+
+    <!-- Pending Products Section -->
+    <div class="section pending-products-section">
+        <h3>المنتجات المعلقة</h3>
+        <!-- Pending products content from API will be populated here -->
+        <div id="pendingProductsContent"></div>
+    </div>
+
+    <!-- Edit Profile Section (Initially hidden) -->
+    <div class="edit-profile" id="editProfileSection">
+        <h3>تعديل الملف الشخصي</h3>
+        <input type="text" id="editName" placeholder="الاسم" />
+        <input type="email" id="editEmail" placeholder="البريد الإلكتروني" />
+        <input type="file" id="editImage" />
+        <button id="saveChangesBtn">حفظ التغييرات</button>
+    </div>
+</div>
+
+
+<script src="./profile.js"></script>
+</body>
+</html>

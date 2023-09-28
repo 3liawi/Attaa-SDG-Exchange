@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Shamel;
+    src: url("../FFShamelFamily-SansOneBold.ttf");
+}
+
+body {
+    font-family: Shamel, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #128a87;
+    font-size: 24px;
+}
+
+.developer-card {
+    background-color: #e9f5f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #128a87;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #128a87;
+}
+
+a {
+    color: #128a87;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0e7a75;
+}

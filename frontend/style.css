@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Shamel;
+    src: url("../FFShamelFamily-SansOneBold.ttf");
+  }
+
+*{
+    font-family: Shamel;
+}
+
+
+.floating-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #15a39d;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+}
